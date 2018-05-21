@@ -15,6 +15,8 @@ public class MainActivity extends Activity {
     public ControlCentre control;
     public static int layout_state;
 
+    // Will need to set up the shared preferences
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends Activity {
         control.setLayout ();
     }
 }
+
 
 
 
