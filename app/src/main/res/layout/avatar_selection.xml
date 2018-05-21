@@ -44,8 +44,6 @@
             android:id="@+id/avatar_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1.5"
-            app:srcCompat="@mipmap/avatar_knight" />
 
         <ImageButton
             android:id="@+id/avatar_button_next"
