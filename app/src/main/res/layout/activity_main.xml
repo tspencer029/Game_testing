@@ -32,13 +32,6 @@
             android:text="Welcome to your universe!"
             tools:fontFamily="@font/acme" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            app:srcCompat="@drawable/imageedit_6_8390756092"
-            android:layout_width="match_parent"
-            android:layout_height="190dp"
-            android:paddingTop="40dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
