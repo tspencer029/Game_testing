@@ -29,7 +29,7 @@
     <LinearLayout
         android:id="@+id/overall_avatar_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="456dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -38,12 +38,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
-            app:srcCompat="@android:drawable/arrow_down_float" />
+            app:srcCompat="@android:drawable/arrow_down_float"
+            tools:rotation="90" />
 
         <ImageView
             android:id="@+id/avatar_image"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="117dp"
+            android:layout_weight="1.5"
+            app:srcCompat="@mipmap/avatar_knight" />
 
         <ImageButton
             android:id="@+id/avatar_button_next"
@@ -51,24 +54,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.5"
             android:gravity='center'
+            android:rotation="90"
             app:srcCompat="@android:drawable/arrow_up_float" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/go_button_container"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/avatar_button_ready"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:padding="20dp"
-            android:text="I'm Ready!" />
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/avatar_button_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="I'm Ready!" />
 </LinearLayout>
