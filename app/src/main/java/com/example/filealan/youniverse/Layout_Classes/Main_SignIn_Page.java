@@ -1,11 +1,14 @@
 package com.example.filealan.youniverse.Layout_Classes;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.filealan.youniverse.ControlCentre;
+import com.example.filealan.youniverse.MainActivity;
 import com.example.filealan.youniverse.R;
 
 public class Main_SignIn_Page {
@@ -17,8 +20,12 @@ public class Main_SignIn_Page {
      * Constructor to set up the Main Page
      * */
     public Main_SignIn_Page(Activity act){
+        Log.d ("Test", "Main SignUp - Constructor");
+
         act.setContentView(R.layout.activity_main);
         activity = act;
+        MainActivity.layout_state = R.layout.activity_main;
+        setUpMainPage ();
     }
 
     /**
@@ -34,10 +41,12 @@ public class Main_SignIn_Page {
        EditText  passwordField = (EditText) activity.findViewById (R.id.passwordField);
        Button  proceedButton = (Button) activity.findViewById (R.id.proceedButton);
 
-       clickText.setOnClickListener (new View.OnClickListener () {
+       proceedButton.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
-                activity.setContentView (R.layout.sign_up);
+                //Set up what needs to be done. User name checked, password checked, etc etc
+                Log.d ("Proceed Button", "Proceed Button Clicked");
+                ControlCentre.setLayout_AvatarPage ();
             }
         });
     }

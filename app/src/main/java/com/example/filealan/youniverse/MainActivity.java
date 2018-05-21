@@ -13,7 +13,7 @@ import com.example.filealan.youniverse.Layout_Classes.Main_SignIn_Page;
 public class MainActivity extends Activity {
 
     public ControlCentre control;
-    public static int layout_state = R.layout.activity_main;
+    public static int layout_state;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,11 @@ public class MainActivity extends Activity {
 
         //Initialises the control centre and sets the layout
         control = ControlCentre.getInstance (this);
+        if (savedInstanceState !=null){
+            //remember layout state
+        } else {
+            layout_state = R.layout.activity_main;
+        }
         control.setLayout ();
     }
 }
