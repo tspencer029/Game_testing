@@ -1,12 +1,14 @@
 package com.example.filealan.youniverse.Layout_Classes;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.filealan.youniverse.ControlCentre;
 import com.example.filealan.youniverse.MainActivity;
 import com.example.filealan.youniverse.R;
 
@@ -35,26 +37,27 @@ public class Avatar_Selection_Page {
         ImageButton avatar_next_button = (ImageButton) activity.findViewById (R.id.avatar_button_next);
         Button avatar_ready = (Button) activity.findViewById (R.id.avatar_button_ready);
 
-        avatar_back_button.setOnClickListener (new View.OnClickListener () {
+        avatar_ready.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                //Change the image of the avatar to the previous image
+            public void onClick(View view) {
+                Log.d("ready button", "button pressed to map world");
+                ControlCentre.setLayout_MapPage();
             }
         });
-
-        avatar_next_button.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View v) {
-                //Change the image of the avatar to the next image
-            }
-        });
-
-        avatar_ready.setOnClickListener (new View.OnClickListener () {
-            @Override
-            public void onClick(View v) {
-                //Go to the next screen when the avatar is ready
-            }
-        });
+//        avatar_back_button.setOnClickListener (new View.OnClickListener () {
+////            @Override
+////            public void onClick(View v) {
+////                //Change the image of the avatar to the previous image
+////            }
+////        });
+////
+////        avatar_next_button.setOnClickListener (new View.OnClickListener () {
+////            @Override
+////            public void onClick(View v) {
+////                //Change the image of the avatar to the next image
+////            }
+////        });
+////
     }
 
     /**

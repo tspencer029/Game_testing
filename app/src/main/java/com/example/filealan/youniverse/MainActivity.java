@@ -33,7 +33,7 @@ public class MainActivity extends Activity {
             layout_state = R.layout.activity_main;
         }
         control.setLayout ();
-       // setContentView (R.layout.avatar_selection);
+
     }
 
     @Override

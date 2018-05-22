@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.example.filealan.youniverse.Layout_Classes.Avatar_Selection_Page;
 import com.example.filealan.youniverse.Layout_Classes.Main_SignIn_Page;
+import com.example.filealan.youniverse.Layout_Classes.Map_Page;
 import com.example.filealan.youniverse.Layout_Classes.Profile_Page;
 import com.example.filealan.youniverse.Layout_Classes.Settings_Page;
 import com.example.filealan.youniverse.Layout_Classes.Sign_Up_Page;
@@ -33,6 +34,8 @@ public class ControlCentre {
             setLayout_SettingsPage();
         } else if (MainActivity.layout_state == R.layout.sign_up) {
             setLayout_SignUpPage();
+        } else if (MainActivity.layout_state == R.layout.map_progress_screen){
+            setLayout_MapPage();
         }
     }
 
@@ -80,6 +83,10 @@ public class ControlCentre {
         Sign_Up_Page signup = Sign_Up_Page.getInstance(act);
     }
 
+    public static void setLayout_MapPage(){
+        Map_Page mappage = Map_Page.getInstance(act);
+
+    }
     /**
      * Returns the instance of the control centre
      * */

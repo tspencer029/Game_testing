@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/space_theme2"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/titleText"
-        tools:fontFamily="@font/acme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:baselineAligned="false"
@@ -16,21 +16,24 @@
         android:paddingTop="20dp"
         android:text="YOUniverse"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:fontFamily="@font/acme" />
 
     <ImageView
         android:id="@+id/planet_placeholder1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
         android:layout_weight="1"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:layout_gravity="left"
+        app:srcCompat="@drawable/Strineo" />
 
     <ImageView
         android:id="@+id/planet_placeholder2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="169dp"
         android:layout_weight="1"
-        app:srcCompat="@mipmap/avatar_knight_fore" />
+        android:cropToPadding="false"
+        app:srcCompat="@drawable/Strineo" />
 
     <LinearLayout
         android:id="@+id/footer"
