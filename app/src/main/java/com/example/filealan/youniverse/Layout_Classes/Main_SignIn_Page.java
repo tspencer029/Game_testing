@@ -18,6 +18,7 @@ public class Main_SignIn_Page {
 
     /**
      * Constructor to set up the Main Page
+     * This corresponds with activity_main.xml
      * */
     public Main_SignIn_Page(Activity act){
         Log.d ("Test", "Main SignUp - Constructor");
@@ -41,6 +42,12 @@ public class Main_SignIn_Page {
        EditText  passwordField = (EditText) activity.findViewById (R.id.passwordField);
        Button  proceedButton = (Button) activity.findViewById (R.id.proceedButton);
 
+       clickText.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               ControlCentre.setLayout_SignUpPage();
+           }
+       });
        proceedButton.setOnClickListener (new View.OnClickListener () {
             @Override
             public void onClick(View view) {
@@ -49,6 +56,8 @@ public class Main_SignIn_Page {
                 ControlCentre.setLayout_AvatarPage ();
             }
         });
+
+
     }
 
     /**
