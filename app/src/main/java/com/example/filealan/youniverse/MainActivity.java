@@ -12,7 +12,7 @@ import com.example.filealan.youniverse.Layout_Classes.Main_SignIn_Page;
 
 public class MainActivity extends Activity {
 
-    public ControlCentre control;
+    public static ControlCentre control;
     public static int layout_state;
 
     // Will need to set up the shared preferences
