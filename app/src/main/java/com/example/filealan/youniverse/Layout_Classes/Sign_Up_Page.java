@@ -31,7 +31,6 @@ public class Sign_Up_Page {
         TextView signup_text = (TextView) activity.findViewById (R.id.SignUpText);
         EditText signup_username = (EditText) activity.findViewById (R.id.signUp_userName);
         EditText signup_email = (EditText) activity.findViewById (R.id.emailAddress_signup);
-        TextView signup_password = (EditText)activity.findViewById (R.id.signUp_password);
         EditText signup_pword = (EditText)activity.findViewById (R.id.pword_signup);
         Button signup_button = (Button) activity.findViewById (R.id.button_signup);
 
