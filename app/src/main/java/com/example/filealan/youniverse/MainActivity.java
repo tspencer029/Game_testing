@@ -25,15 +25,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        //Initialises the control centre and sets the layout
-//        control = ControlCentre.getInstance (this);
-//        if (savedInstanceState !=null){
-//            //remember layout state
-//        } else {
-//            layout_state = R.layout.activity_main;
-//        }
-//        control.setLayout ();
-        setContentView (R.layout.avatar_selection);
+        //Initialises the control centre and sets the layout
+        control = ControlCentre.getInstance (this);
+        if (savedInstanceState !=null){
+            //remember layout state
+        } else {
+            layout_state = R.layout.activity_main;
+        }
+        control.setLayout ();
+       // setContentView (R.layout.avatar_selection);
     }
 
     @Override
