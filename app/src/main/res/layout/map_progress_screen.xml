@@ -25,7 +25,7 @@
         android:layout_height="169dp"
         android:layout_weight="1"
         android:layout_gravity="left"
-        app:srcCompat="@drawable/Strineo" />
+        app:srcCompat="@drawable/strineo" />
 
     <ImageView
         android:id="@+id/planet_placeholder2"
@@ -33,7 +33,7 @@
         android:layout_height="169dp"
         android:layout_weight="1"
         android:cropToPadding="false"
-        app:srcCompat="@drawable/Strineo" />
+        app:srcCompat="@drawable/strineo" />
 
     <LinearLayout
         android:id="@+id/footer"
