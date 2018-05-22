@@ -30,6 +30,7 @@ public void setSignUpLayout(){
     EditText signUp_password  = (EditText)activity.findViewById(R.id.pword_signup);
     EditText signUp_email  = (EditText)activity.findViewById(R.id.emailAddress_signup);
     Button signUp_Button = (Button)activity.findViewById(R.id.button_signup);
+
     signUp_Button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
