@@ -7,29 +7,19 @@
     android:orientation="vertical">
 
 
-    <LinearLayout
-        android:id="@+id/title_container"
+    <TextView
+        android:id="@+id/loading_screen_text"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2.5"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="You're Off!"
+        android:textAlignment="center"
+        android:textSize="70sp" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="20dp"
-            android:layout_weight="1"
-            android:text="You're Off!"
-            android:textAlignment="center"
-            android:textSize="70sp" />
-    </LinearLayout>
-
-    <LinearLayout
+    <ImageView
+        android:id="@+id/placeholder_spaceship"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher" />
 
-    </LinearLayout>
 </LinearLayout>

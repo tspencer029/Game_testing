@@ -15,22 +15,38 @@ public class MainActivity extends Activity {
     public static ControlCentre control;
     public static int layout_state;
 
-    // Will need to set up the shared preferences
+    /**
+     *
+     * Will need to set up the shared preferences
+     *
+     * */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //Initialises the control centre and sets the layout
-        control = ControlCentre.getInstance (this);
-        if (savedInstanceState !=null){
-            //remember layout state
-        } else {
-            layout_state = R.layout.activity_main;
-        }
-        control.setLayout ();
+//        //Initialises the control centre and sets the layout
+//        control = ControlCentre.getInstance (this);
+//        if (savedInstanceState !=null){
+//            //remember layout state
+//        } else {
+//            layout_state = R.layout.activity_main;
+//        }
+//        control.setLayout ();
+        setContentView (R.layout.avatar_selection);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause ();
+    }
+
+    @Override
+    protected void onSaveInstanceState (Bundle outState){
+        super.onSaveInstanceState (outState);
     }
 }
+
 
 
 

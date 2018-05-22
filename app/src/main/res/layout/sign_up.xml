@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="5dp"
         android:baselineAligned="false"
         android:paddingTop="20dp"
         android:text="SignUp"
@@ -21,6 +22,8 @@
         android:id="@+id/signUp_userName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Username:" />
@@ -29,6 +32,8 @@
         android:id="@+id/emailAddress_signup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="E-mail:" />
@@ -38,18 +43,15 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/signUp_password"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enter Password:" />
-
 
         <EditText
             android:id="@+id/pword_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textPassword" />
 
 

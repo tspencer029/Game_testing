@@ -22,12 +22,14 @@ public Sign_Up_Page(Activity act){
     setSignUpLayout();
 }
 
+  /***
+     * Set up the buttons and layout of the profile page
+     */
 public void setSignUpLayout(){
     EditText signUp_userName = (EditText)activity.findViewById(R.id.signUp_userName);
     EditText signUp_password  = (EditText)activity.findViewById(R.id.pword_signup);
     EditText signUp_email  = (EditText)activity.findViewById(R.id.emailAddress_signup);
     Button signUp_Button = (Button)activity.findViewById(R.id.button_signup);
-
     signUp_Button.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
