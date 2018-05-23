@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.util.Log;
 
 import com.example.filealan.youniverse.Layout_Classes.Avatar_Selection_Page;
+import com.example.filealan.youniverse.Layout_Classes.Game_Page;
 import com.example.filealan.youniverse.Layout_Classes.Main_SignIn_Page;
 import com.example.filealan.youniverse.Layout_Classes.Map_Page;
 import com.example.filealan.youniverse.Layout_Classes.Profile_Page;
@@ -36,8 +37,12 @@ public class ControlCentre {
             setLayout_SignUpPage();
         } else if (MainActivity.layout_state == R.layout.map_progress_screen){
             setLayout_MapPage();
+        } else {
+            setLayout_GamePage ();
         }
     }
+
+
 
     /**
      * Method defined to set the layout and manage the UI for the Main Signup Class
@@ -86,6 +91,11 @@ public class ControlCentre {
     public static void setLayout_MapPage(){
         Map_Page mappage = Map_Page.getInstance(act);
 
+    }
+
+    public static void setLayout_GamePage(){
+        Log.d ("Test", "Control Centre - Set Layout Main SignUp");
+        Game_Page main = Game_Page.getInstance(act);
     }
     /**
      * Returns the instance of the control centre
